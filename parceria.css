@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --black:#000;
+    --white:#fff;
+    --pumpkin:#fe791a;
+    --overWhite:#FAF9F6;
+    --roxo: #1F032F;
+}
+html{
+    scroll-behavior: smooth;
+}
+.comeco-parceria{
+    background-color: var(--white);
+    margin-top: 90px;
+}
+.titulo_parcerias{
+    text-align: center;
+    font-size: 40px;
+    color: var(--pumpkin);
+}
+.img-par{
+    width: 65%;
+    height: 80%;
+}
+.img-zero{
+    width: 50%;
+    height: 20%;
+    margin-top: 110px;
+}
+.corpo-parcerias{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+}
+.img{
+    width: 43.33%;
+    .corpo-parcerias::after {
+    display: flex;
+}
+}
+@media screen and (max-width: 785px) {
+    .img {
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+    .corpo-parcerias{
+        flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    
+    .titulo_parcerias{
+        margin-top: 15rem;
+    }
+  }
+

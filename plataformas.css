@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --black:#000;
+    --white:#fff;
+    --pumpkin:#fe791a;
+    --overWhite:#FAF9F6;
+    --roxo: #1F032F;
+}
+html{
+    scroll-behavior: smooth;
+}
+#plat{
+    background-color: var(--white);
+}
+.corpo-plat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 10%;
+}
+.plat-1 h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+.titulo-plataforma{
+    color: var(--black);
+    line-height: 3rem;
+}
+.titulo-plataforma span{
+    color: var(--pumpkin);
+}
+.img-plat{
+    display: flex;
+    justify-content: center;
+    margin-left: 5rem;
+    width: 55%;
+    height: 60%;
+}
+
+
+.corpo-cards-plat{
+    margin-bottom: 25%;
+}
+.cards-plat-1{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    color: var(--pumpkin);
+}
+.cards-plat-2{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    color: var(--pumpkin);  
+}
+.card-plat{
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--roxo);
+    padding: 50px;
+}
+.card-plat i{
+    font-size: 50px;
+}
+.text-plat-card{
+    color: var(--white);
+    line-height: 3rem;
+}
+.subText-plat-card{
+    color: var(--white);
+    font-size: 12px;
+}
+
+
+@media(max-width:785px){
+    .corpo-plat{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0% 10%;
+        flex-direction: column;
+    }
+    .plat-1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .img-plat{
+        display: flex;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+@media(max-width:530px){
+    .corpo-plat{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0% 10%;
+        flex-direction: column;
+    }
+    .cards-plat-1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .img-plat{
+        display: flex;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
