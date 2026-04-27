@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap');
 
 :root{
     --black:#000;
@@ -8,6 +6,18 @@
     --pumpkin:#fe791a;
     --overWhite:#FAF9F6;
     --roxo: #1F032F;
+}
+
+/* Reset Global para evitar espaços em branco nas laterais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden; /* Impede scroll horizontal */
 }
 
 #prj {
@@ -18,7 +28,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Garante largura total */
+    width: 100vw; /* Ocupa a largura total da janela */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .corpo {
@@ -102,25 +117,19 @@
 }
 
 @media (max-width: 992px) {
+    #prj {
+        padding: 4rem 5%;
+    }
     .corpo {
         flex-direction: column;
         text-align: center;
     }
-    
-    .text-prj {
-        white-space: normal;
-    }
-    
     .icons-prj li {
         justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
-    .text-1-prj {
-        font-size: 1.4rem;
-    }
-    .text-2-prj {
-        font-size: 2.2rem;
-    }
+    .text-1-prj { font-size: 1.4rem; }
+    .text-2-prj { font-size: 2.2rem; }
 }
