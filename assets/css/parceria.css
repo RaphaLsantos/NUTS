@@ -1,0 +1,55 @@
+:root{
+    --roxo: #1F032F;
+    --pumpkin:#fe791a;
+    --white:#fff;
+}
+
+.parcerias-section {
+    padding: 5rem 10%;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.titulo_parcerias {
+    font-size: 2.5rem;
+    color: var(--roxo);
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.corpo-parcerias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.corpo-parcerias .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-par, .img-zero {
+    max-width: 150px; /* Logos menores */
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.img-par:hover, .img-zero:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .corpo-parcerias {
+        gap: 2rem;
+    }
+    .img-par, .img-zero {
+        max-width: 120px;
+    }
+}
