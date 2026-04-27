@@ -1,130 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Share Tech Mono', monospace;
-    list-style: none;
-    text-decoration: none;
-}
+
 :root{
-    --black:#000;
-    --white:#fff;
-    --pumpkin:#fe791a;
-    --overWhite:#FAF9F6;
     --roxo: #1F032F;
+    --pumpkin:#fe791a;
+    --white:#fff;
+    --black:#000;
 }
-html{
-    scroll-behavior: smooth;
-}
-#plat{
+
+#plat {
+    padding: 8rem 10%;
     background-color: var(--white);
-}
-.corpo-plat{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0% 10%;
-}
-.plat-1 h1{
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 4rem;
-}
-.titulo-plataforma{
-    color: var(--black);
-    line-height: 3rem;
-}
-.titulo-plataforma span{
-    color: var(--pumpkin);
-}
-.img-plat{
-    display: flex;
-    justify-content: center;
-    margin-left: 5rem;
-    width: 55%;
-    height: 60%;
-}
-
-
-.corpo-cards-plat{
-    margin-bottom: 25%;
-}
-.cards-plat-1{
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    color: var(--pumpkin);
-}
-.cards-plat-2{
-    display: flex;
     justify-content: center;
     gap: 4rem;
-    color: var(--pumpkin);  
 }
-.card-plat{
-    margin-top: 10%;
-    text-align: center;
-    border-radius: 10px;
+
+.plat-1 {
+    flex: 1;
+}
+
+.titulo-plataforma {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.titulo-plataforma span {
+    color: var(--pumpkin);
+}
+
+.plat-1 p h5 {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.img-plat {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.corpo-cards-plat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cards-plat-1, .cards-plat-2 {
+    display: flex;
+    gap: 2rem;
+}
+
+.card-plat {
+    flex: 1;
     background: var(--roxo);
-    padding: 50px;
-}
-.card-plat i{
-    font-size: 50px;
-}
-.text-plat-card{
+    padding: 2rem;
+    border-radius: 20px;
+    transition: all 0.3s;
+    text-align: center;
     color: var(--white);
-    line-height: 3rem;
 }
-.subText-plat-card{
+
+.card-plat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(31, 3, 47, 0.2);
+}
+
+.card-plat i {
+    font-size: 2.5rem;
+    color: var(--pumpkin);
+    margin-bottom: 1.5rem;
+}
+
+.text-plat-card {
+    font-size: 1.3rem;
     color: var(--white);
-    font-size: 12px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
+.subText-plat-card {
+    font-size: 0.9rem;
+    color: #ccc;
+}
 
-@media(max-width:785px){
-    .corpo-plat{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0% 10%;
+@media (max-width: 992px) {
+    #plat {
         flex-direction: column;
-    }
-    .plat-1{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
+        padding: 4rem 5%;
     }
-    .img-plat{
-        display: flex;
+    .cards-plat-1, .cards-plat-2 {
         justify-content: center;
-        margin-left: 0rem;
-        margin-right: 0rem;
-    }
-}
-@media(max-width:530px){
-    .corpo-plat{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0% 10%;
-        flex-direction: column;
-    }
-    .cards-plat-1{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .img-plat{
-        display: flex;
-        justify-content: center;
-        margin-left: 0rem;
-        margin-right: 0rem;
     }
 }
 
+@media (max-width: 576px) {
+    .cards-plat-1, .cards-plat-2 {
+        flex-direction: column;
+    }
+}

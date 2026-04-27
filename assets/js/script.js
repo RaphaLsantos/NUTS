@@ -25,13 +25,12 @@ document.getElementById('prev').onclick = function(){
 //Botão Voltar ao Topo//
 const scrollAnima = document.querySelector('[data-anima="scroll"]')
 
-const metadeWindow = window.innerHeight*5.9;
-console.log(metadeWindow)
+const threshold = window.innerHeight * 0.8;
 
 function animarScroll(){
     const topoItem = scrollAnima.getBoundingClientRect().top;
 
-    const itemVisivel = topoItem - metadeWindow < 0;
+    const itemVisivel = topoItem < threshold;
 
     if(itemVisivel){
         scrollAnima.classList.add('show-button');
