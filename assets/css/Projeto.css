@@ -8,16 +8,13 @@
     --roxo: #1F032F;
 }
 
-/* Reset Global para evitar espaços em branco nas laterais */
-* {
+/* Reset crítico para garantir que nada limite a largura do body */
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
     width: 100%;
-    overflow-x: hidden; /* Impede scroll horizontal */
+    min-width: 100%;
+    overflow-x: hidden;
 }
 
 #prj {
@@ -28,12 +25,16 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw; /* Ocupa a largura total da janela */
+    
+    /* Força a seção a ocupar toda a largura da janela, ignorando paddings do pai */
+    width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    
+    box-sizing: border-box;
 }
 
 .corpo {
@@ -109,6 +110,7 @@ body, html {
     text-align: center;
     display: inline-block;
     margin-top: 2rem;
+    text-decoration: none;
 }
 
 .button-prj:hover {
